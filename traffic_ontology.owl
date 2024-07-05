@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#"
+     xml:base="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通兴趣点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#主干路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#主干路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市道路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通兴趣点 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通兴趣点"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通参与者 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通参与者"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通基础道路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通基础道路"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通工具 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通工具"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通态势 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通态势">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通路况评价"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通枢纽 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通枢纽">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通重要场所"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通路况评价 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通路况评价"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通重要场所 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通重要场所"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#停车场 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#停车场">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通重要场所"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公交站点 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公交站点">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通枢纽"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#地铁站点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共交通 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共交通">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通工具"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#私家车"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共交通出行者 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共交通出行者">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通参与者"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#私家车驾驶员"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共汽车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共汽车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共交通"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#轨道交通"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#动车轨道 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#动车轨道">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市轨道"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#医院 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#医院">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#十字路口 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#十字路口">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通重要场所"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#商场 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#商场">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#地铁站点 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#地铁站点">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通枢纽"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#地铁轨道 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#地铁轨道">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市轨道"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市轨道 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市轨道">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通基础道路"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市道路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市道路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市道路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通基础道路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#学校 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#学校">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#快速路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#快速路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市道路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#拥堵指数 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#拥堵指数">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通路况评价"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#支路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#支路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市道路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#景点 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#景点">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#机场 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#机场">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#次路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#次路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市道路"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#磁悬浮轨道 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#磁悬浮轨道">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#城市轨道"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#私家车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#私家车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通工具"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#私家车驾驶员 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#私家车驾驶员">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通参与者"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#立交桥 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#立交桥">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通重要场所"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#车流时速 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#车流时速">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通路况评价"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#车站 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#车站">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#POI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#轨道交通 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#轨道交通">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#公共交通"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通兴趣点"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通参与者"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通基础道路"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通工具"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通路况评价"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通重要场所"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#交通态势"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#拥堵指数"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#车流时速"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#动车轨道"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#地铁轨道"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#磁悬浮轨道"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#医院"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#商场"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#学校"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#景点"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#机场"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tensor/ontologies/2022/2/untitled-ontology-19#车站"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
